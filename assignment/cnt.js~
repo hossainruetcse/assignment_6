@@ -1,0 +1,20 @@
+var app = angular.module("simpleApp",['ngMaterial', 'ngMessages']);
+app.controller("simpleController", function ($scope){
+ 
+$scope.col=[];
+ $scope.add= function()
+{
+   $scope.col.push($scope.data);
+   $scope.data="";
+}
+})
+
+
+
+angular.module('inputErrorsApp', ['ngMaterial', 'ngMessages'])
+.controller('AppCtrl', function($scope) {
+  $scope.project = {
+    description: 'Nuclear Missile Defense System',
+    rate: 500
+  };
+});
